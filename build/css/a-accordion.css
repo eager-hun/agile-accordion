@@ -1,0 +1,34 @@
+/**
+ * @file
+ * Style rules that are neccessary for basic accordion functionality.
+ */
+.accdn {
+  position: relative;
+}
+
+.accdn-initialized .accdn__head {
+  cursor: pointer;
+}
+
+.is-tabs .accdn__head {
+  display: none;
+}
+
+.has-js .accdn__content {
+  display: none;
+}
+
+.accdn__tabs {
+  display: none;
+}
+
+.is-tabs .accdn__tabs {
+  display: table;
+}
+
+.accdn__tab {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=/a-accordion/build/css/sourcemaps/a-accordion.css.map */

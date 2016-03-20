@@ -1,0 +1,143 @@
+/**
+ * @file
+ * Demo styling for accordion.
+ */
+.page--accdn-demo {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.page--accdn-demo .main > h2 {
+  margin: 2.5em 0 1.25em;
+}
+
+.page--accdn-demo #main {
+  position: relative;
+}
+
+.accdn-initialized .accdn__head {
+  background: lightgreen;
+}
+
+.accdn__tab {
+  transition: 100ms color ease-in-out, 100ms background ease-in-out;
+}
+
+.accdn-initialized .accdn__tab {
+  background: #b5dce9;
+  cursor: pointer;
+}
+
+.accdn-initialized .accdn__tab.is-active {
+  background: #2a758e;
+  color: white;
+}
+
+.accdn__head,
+.accdn__tab {
+  position: relative;
+}
+
+.accdn__head .text,
+.accdn__tab .text {
+  border: 1px solid transparent;
+  display: inline-block;
+  position: relative;
+  transition: 100ms border-color ease-in-out;
+}
+
+.accdn__head:focus,
+.accdn__tab:focus {
+  outline: none;
+  z-index: 2;
+}
+
+.accdn__head {
+  padding: 0.35em 0.25em 0.35em 1.875em;
+}
+
+.accdn__head .text {
+  left: -1px;
+  padding: 0.15em 0.5em;
+}
+
+.accdn__head__marker {
+  background: transparent;
+  border-radius: 50%;
+  display: block;
+  height: 20px;
+  left: -21px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  transition: 100ms background ease-in-out, 400ms transform ease-in-out;
+  width: 20px;
+}
+
+.accdn__head__marker::after {
+  border: 8px solid transparent;
+  border-left: 12px solid white;
+  border-right: none;
+  content: '';
+  display: block;
+  left: 6px;
+  position: absolute;
+  top: 2px;
+}
+
+.accdn__item.is-open .accdn__head__marker {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.accdn__head:focus .accdn__head__marker {
+  background: rgba(0, 0, 0, 0.33);
+}
+
+.accdn__tab {
+  padding: 0.35em 0.25em;
+  width: 12em;
+}
+
+.accdn__tab .text {
+  padding: 0.15em 0.75em;
+}
+
+.accdn__tab:focus .text {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.accdn__tab.is-active:focus .text {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.accdn__content {
+  padding: 1em 1em 1em 2.5em;
+}
+
+.accdn-initialized .accdn__content {
+  background: whitesmoke;
+}
+
+.accdn__content:focus {
+  outline: none;
+}
+
+.accdn__content *:first-child {
+  margin-top: 0;
+}
+
+.accdn__content *:last-child {
+  margin-bottom: 0;
+}
+
+.is-tabs .accdn__content {
+  padding-left: 0.75em;
+}
+
+.accdn-initialized.is-tabs .accdn__content {
+  border: 0.25em solid #2a758e;
+}
+
+/*# sourceMappingURL=/a-accordion/build/css/sourcemaps/a-accordion-skin.css.map */

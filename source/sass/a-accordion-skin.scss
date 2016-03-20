@@ -1,0 +1,158 @@
+/**
+ * @file
+ * Demo styling for accordion.
+ */
+
+
+// #############################################################################
+// Demo page helpers.
+
+.page--accdn-demo {
+  font-family: sans-serif;
+  line-height: 1.5;
+
+  .main > h2 {
+    margin: 2.5em 0 1.25em;
+  }
+  #main {
+    position: relative;
+  }
+}
+
+
+// #############################################################################
+// Sample accordion styling.
+
+// -----------------------------------------------------------------------------
+// Vars.
+
+$color-tab: mix(white, lightblue, 10%);
+$color-head: lightgreen;
+$color-content: mix(black, whitesmoke, 10%);
+$anim-speeds: 400ms;
+
+// -----------------------------------------------------------------------------
+// Accordion appearance.
+
+.accdn__head {
+  .accdn-initialized & {
+    background: $color-head;
+  }
+}
+
+.accdn__tab {
+  transition: 100ms color ease-in-out, 100ms background ease-in-out;
+
+  .accdn-initialized & {
+    background: $color-tab;
+    cursor: pointer;
+
+    &.is-active {
+      background: darken($color-tab, 45%);
+      color: white;
+    }
+  }
+}
+
+.accdn__head,
+.accdn__tab {
+  position: relative;
+
+  .text {
+    border: 1px solid transparent;
+    display: inline-block;
+    position: relative;
+    transition: 100ms border-color ease-in-out;
+  }
+
+  &:focus {
+    outline: none;
+    // Elevates the item so if it has an outline or shadow, it will not be
+    // covered by adjacent items.
+    z-index: 2;
+  }
+}
+
+.accdn__head {
+  padding: 0.35em 0.25em 0.35em 1.875em;
+
+  .text {
+    left: -1px; // Correction for its border width.
+    padding: 0.15em 0.5em;
+  }
+}
+// Tiny arrow in front of the text.
+.accdn__head__marker {
+  background: transparent;
+  border-radius: 50%;
+  display: block;
+  height: 20px;
+  left: -21px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  transition: 100ms background ease-in-out, $anim-speeds transform ease-in-out;
+  width: 20px;
+
+  &::after {
+    border: 8px solid transparent;
+    border-left: 12px solid white;
+    border-right: none;
+    content: '';
+    display: block;
+    left: 6px;
+    position: absolute;
+    top: 2px;
+  }
+
+  // Arrow points downwards.
+  .accdn__item.is-open & {
+    transform: rotate(90deg);
+  }
+
+  .accdn__head:focus & {
+    background: rgba(black, 0.33);
+  }
+}
+
+.accdn__tab {
+  padding: 0.35em 0.25em;
+  width: 12em;
+
+  .text {
+    padding: 0.15em 0.75em;
+  }
+  &:focus .text {
+    border-color: rgba(black, 0.2);
+  }
+  &.is-active:focus .text {
+    border-color: rgba(white, 0.2);
+  }
+}
+
+.accdn__content {
+  padding: 1em 1em 1em 2.5em;
+
+  .accdn-initialized & {
+    background: whitesmoke;
+  }
+  &:focus {
+    outline: none;
+  }
+
+  & *:first-child {
+    margin-top: 0;
+  }
+  & *:last-child {
+    margin-bottom: 0;
+  }
+
+  // In tabs mode.
+  .is-tabs & {
+    padding-left: 0.75em;
+  }
+  .accdn-initialized.is-tabs & {
+    border: 0.25em solid darken($color-tab, 45%);
+  }
+}
+

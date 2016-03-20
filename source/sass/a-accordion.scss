@@ -1,0 +1,41 @@
+/**
+ * @file
+ * Style rules that are neccessary for basic accordion functionality.
+ */
+
+.accdn {
+  position: relative;
+}
+
+.accdn__head {
+  .accdn-initialized & {
+    cursor: pointer;
+  }
+  // When in tabs mode, the heads are hidden.
+  .is-tabs & {
+    display: none;
+  }
+}
+
+.accdn__content {
+  .has-js & {
+    // JS will reveal them.
+    display: none;
+  }
+}
+
+.accdn__tabs {
+  // The default is accordion mode (mobile first). Tabs don't show there.
+  display: none;
+
+  // Tabs mode.
+  .is-tabs & {
+    display: table;
+  }
+}
+
+.accdn__tab {
+  display: table-cell;
+  vertical-align: middle;
+}
+

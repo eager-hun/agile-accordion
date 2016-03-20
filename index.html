@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- That's an empty favicon, prevents 404s. -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <link rel="stylesheet" href="build/css/a-accordion.css">
+    <link rel="stylesheet" href="build/css/a-accordion-skin.css">
+
+    <script>
+      if (document.documentElement.className.match(/no-js/)) {
+        document.documentElement.className =
+        document.documentElement.className.replace(/(?:^|\s)no-js(?!\S)/g, 'has-js');
+      }
+      else {
+        document.documentElement.className += ' has-js';
+      }
+    </script>
+  </head>
+  <body class="page--accdn-demo">
+    <header class="header">
+      <h1 class="page__title">Agile accordion sample</h1>
+    </header>
+    <div id="main" class="main">
+      <h2>Grouped stuffs follow</h2>
+
+
+      <div class="accdn">
+        <div class="accdn__item">
+          <div class="accdn__head">
+            <div class="text">Accdn head 1 </div>
+          </div>
+          <div class="accdn__content">
+            <h3>Accordion content 1.</h3>
+            <p>Nullam sagittis. Cras varius. Nullam accumsan lorem in dui.</p>
+            <p>Sed in libero ut nibh <a href="#">placerat accumsan</a>. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Etiam feugiat lorem non metus.</p>
+            <p>Fusce a quam. <a href="#">Sed hendrerit.</a> Pellentesque ut neque.</p>
+          </div>
+        </div>
+        <div class="accdn__item">
+          <div class="accdn__head">
+            <div class="text">Accdn head 2 with as long a text as this one</div>
+          </div>
+          <div class="accdn__content">
+            <h3>Accordion content 2.</h3>
+            <p>Nullam sagittis. Cras varius. Nullam accumsan lorem in dui.</p>
+            <p>Sed in libero ut nibh placerat accumsan. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. <a href="#">Etiam feugiat lorem</a> non metus.</p>
+          </div>
+        </div>
+        <div class="accdn__item is-open">
+          <div class="accdn__head">
+            <div class="text">Third&nbsp;item</div>
+          </div>
+          <div class="accdn__content">
+            <h3>This is initially open, thanks to its <code>.is&#8209;open</code> class.</h3>
+            <p>Sed in libero ut nibh placerat accumsan. Suspendisse enim turpis, dictum sed, iaculis a, condimentum.</p>
+            <p><a href="#">Fusce a quam</a>. Sed hendrerit. Pellentesque ut neque.</p>
+            <p>Nunc nonummy metus. Nullam vel sem. Fusce egestas elit eget lorem. Curabitur blandit mollis lacus. Pellentesque habitant morbi tristique senectus et netus <a href="#">et malesuada</a> fames ac turpis egestas.</p>
+          </div>
+        </div>
+        <div class="accdn__item">
+          <div class="accdn__head">
+            <div class="text">Accdn head 4 plus some words</div>
+          </div>
+          <div class="accdn__content">
+            <h3>Accordion content 4.</h3>
+            <p>Nullam sagittis. Cras varius. Nullam accumsan lorem in dui.</p>
+            <p>Fusce a quam. Sed hendrerit. Pellentesque ut neque.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <h2>Some things here</h2>
+
+      <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Ut id nisl quis enim dignissim sagittis. Fusce neque. Phasellus blandit leo ut odio. Aliquam lobortis. Vestibulum ullamcorper mauris at ligula. In turpis. In ac felis quis tortor malesuada pretium. Sed lectus.</p>
+      <p>Aliquam eu nunc. Suspendisse potenti. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Donec sodales sagittis magna. Vivamus laoreet.</p>
+      <p>Maecenas nec odio et ante tincidunt tempus. Etiam rhoncus. Vestibulum suscipit nulla quis orci. Pellentesque dapibus hendrerit tortor. Curabitur blandit mollis lacus. Ut tincidunt tincidunt erat. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+
+      <h2>Another set of grouped stuffs</h2>
+
+
+      <div class="accdn">
+        <div class="accdn__item">
+          <div class="accdn__head">
+            <div class="text">Accdn head 1</div>
+          </div>
+          <div class="accdn__content">
+            <h3>Accordion content 1.</h3>
+            <p>Nullam sagittis. Cras varius. Nullam accumsan lorem in dui.</p>
+            <p>Sed in libero ut nibh placerat accumsan. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Etiam feugiat lorem non metus.</p>
+            <p>Fusce a quam. Sed hendrerit. Pellentesque ut neque.</p>
+          </div>
+        </div>
+        <div class="accdn__item">
+          <div class="accdn__head">
+            <div class="text">Accdn head 2</div>
+          </div>
+          <div class="accdn__content">
+            <h3>Accordion content 2.</h3>
+            <p>Nullam sagittis. Cras varius. Nullam accumsan lorem in dui.</p>
+            <p>Sed in libero ut nibh placerat accumsan. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Etiam feugiat lorem non metus.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla consequat massa quis enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.</p>
+      <p>Fusce fermentum. Phasellus a est. Praesent egestas neque eu enim.</p>
+      <p>Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Nullam sagittis.</p>
+      <p>Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Suspendisse potenti. Vivamus aliquet elit ac nisl.</p>
+    </div><!-- /#main -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script src="build/js/a-accordion.js"></script>
+    <script src="build/js/init.js"></script>
+
+  </body>
+</html>
+
