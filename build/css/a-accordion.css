@@ -23,6 +23,7 @@
 }
 
 .is-tabs .accdn__tabs {
+  cursor: pointer;
   display: table;
 }
 
