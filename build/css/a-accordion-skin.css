@@ -11,16 +11,8 @@
   margin: 2.5em 0 1.25em;
 }
 
-.page--accdn-demo #main {
-  position: relative;
-}
-
 .accdn-initialized .accdn__head {
   background: lightgreen;
-}
-
-.accdn__tab {
-  transition: 100ms color ease-in-out, 100ms background ease-in-out;
 }
 
 .accdn-initialized .accdn__tab {

@@ -14,9 +14,6 @@
   .main > h2 {
     margin: 2.5em 0 1.25em;
   }
-  #main {
-    position: relative;
-  }
 }
 
 
@@ -41,8 +38,6 @@ $anim-speeds: 400ms;
 }
 
 .accdn__tab {
-  transition: 100ms color ease-in-out, 100ms background ease-in-out;
-
   .accdn-initialized & {
     background: $color-tab;
     cursor: pointer;
