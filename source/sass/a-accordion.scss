@@ -7,14 +7,11 @@
   position: relative;
 }
 
-.accdn__head {
-  .accdn-initialized & {
-    cursor: pointer;
-  }
-  // When in tabs mode, the heads are hidden.
-  .is-tabs & {
-    display: none;
-  }
+.accdn-initialized > .accdn__item > .accdn__head {
+  cursor: pointer;
+}
+.is-tabs > .accdn__item > .accdn__head {
+  display: none;
 }
 
 .accdn__content {
@@ -27,12 +24,10 @@
 .accdn__tabs {
   // The default is accordion mode (mobile first). Tabs don't show there.
   display: none;
-
-  // Tabs mode.
-  .is-tabs & {
-    cursor: pointer;
-    display: table;
-  }
+}
+.is-tabs > .accdn__tabs {
+  cursor: pointer;
+  display: table;
 }
 
 .accdn__tab {

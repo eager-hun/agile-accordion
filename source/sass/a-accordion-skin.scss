@@ -31,21 +31,17 @@ $anim-speeds: 400ms;
 // -----------------------------------------------------------------------------
 // Accordion appearance.
 
-.accdn__head {
-  .accdn-initialized & {
-    background: $color-head;
-  }
+.accdn-initialized > .accdn__item > .accdn__head {
+  background: $color-head;
 }
 
-.accdn__tab {
-  .accdn-initialized & {
-    background: $color-tab;
-    cursor: pointer;
+.accdn-initialized > .accdn__tabs > .accdn__tab {
+  background: $color-tab;
+  cursor: pointer;
 
-    &.is-active {
-      background: darken($color-tab, 45%);
-      color: white;
-    }
+  &.is-active {
+    background: darken($color-tab, 45%);
+    color: white;
   }
 }
 
@@ -101,7 +97,7 @@ $anim-speeds: 400ms;
   }
 
   // Arrow points downwards.
-  .accdn__item.is-open & {
+  .accdn__item.is-open > .accdn__head & {
     transform: rotate(90deg);
   }
 
@@ -109,6 +105,7 @@ $anim-speeds: 400ms;
     background: rgba(black, 0.33);
   }
 }
+
 
 .accdn__tab {
   padding: 0.35em 0.25em;
@@ -135,18 +132,18 @@ $anim-speeds: 400ms;
     outline: none;
   }
 
-  & *:first-child {
+  & > *:first-child {
     margin-top: 0;
   }
-  & *:last-child {
+  & > *:last-child {
     margin-bottom: 0;
   }
 
   // In tabs mode.
-  .is-tabs & {
+  .is-tabs > .accdn__item > & {
     padding-left: 0.75em;
   }
-  .accdn-initialized.is-tabs & {
+  .accdn-initialized.is-tabs > .accdn__item > & {
     border: 0.25em solid darken($color-tab, 45%);
   }
 }

@@ -11,7 +11,7 @@
     var defaults = {
       tabsAt: 560,
       exclusiveItems: false,
-      effectSpeed: 400
+      effectSpeed: 700
     };
     var settings = $.extend(true, {}, defaults, options);
 
@@ -155,9 +155,9 @@
 
     this.each(function() {
       var $wrapper  = $(this);
-      var $items    = $wrapper.find('.accdn__item');
-      var $heads    = $wrapper.find('.accdn__head');
-      var $contents = $wrapper.find('.accdn__content');
+      var $items    = $wrapper.children('.accdn__item');
+      var $heads    = $items.children('.accdn__head');
+      var $contents = $items.children('.accdn__content');
 
       // -----------------------------------------------------------------------
       // Either prepare heads and create tabs.

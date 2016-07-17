@@ -6,11 +6,11 @@
   position: relative;
 }
 
-.accdn-initialized .accdn__head {
+.accdn-initialized > .accdn__item > .accdn__head {
   cursor: pointer;
 }
 
-.is-tabs .accdn__head {
+.is-tabs > .accdn__item > .accdn__head {
   display: none;
 }
 
@@ -22,7 +22,7 @@
   display: none;
 }
 
-.is-tabs .accdn__tabs {
+.is-tabs > .accdn__tabs {
   cursor: pointer;
   display: table;
 }

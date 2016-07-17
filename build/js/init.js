@@ -19,10 +19,17 @@
   // ###########################################################################
   // Init accordions.
 
-  $('.accdn').accdn({
-    tabsAt: 740,
-    exclusiveItems: false
-  });
+  $('.accdn')
+    .not('#accdn--3')
+    .accdn({
+      tabsAt: 740,
+      exclusiveItems: false
+    });
+
+  $('#accdn--3')
+    .accdn({
+      tabsAt: 100
+    });
 
 })(jQuery, this, this.document);
 

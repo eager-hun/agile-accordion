@@ -11,16 +11,16 @@
   margin: 2.5em 0 1.25em;
 }
 
-.accdn-initialized .accdn__head {
+.accdn-initialized > .accdn__item > .accdn__head {
   background: lightgreen;
 }
 
-.accdn-initialized .accdn__tab {
+.accdn-initialized > .accdn__tabs > .accdn__tab {
   background: #b5dce9;
   cursor: pointer;
 }
 
-.accdn-initialized .accdn__tab.is-active {
+.accdn-initialized > .accdn__tabs > .accdn__tab.is-active {
   background: #2a758e;
   color: white;
 }
@@ -77,7 +77,7 @@
   top: 2px;
 }
 
-.accdn__item.is-open .accdn__head__marker {
+.accdn__item.is-open > .accdn__head .accdn__head__marker {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -116,19 +116,19 @@
   outline: none;
 }
 
-.accdn__content *:first-child {
+.accdn__content > *:first-child {
   margin-top: 0;
 }
 
-.accdn__content *:last-child {
+.accdn__content > *:last-child {
   margin-bottom: 0;
 }
 
-.is-tabs .accdn__content {
+.is-tabs > .accdn__item > .accdn__content {
   padding-left: 0.75em;
 }
 
-.accdn-initialized.is-tabs .accdn__content {
+.accdn-initialized.is-tabs > .accdn__item > .accdn__content {
   border: 0.25em solid #2a758e;
 }
 

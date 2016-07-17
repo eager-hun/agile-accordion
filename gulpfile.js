@@ -77,7 +77,6 @@ const jsCustomBundle = 'init'; // Base of the filename.
 // Opts.
 var buildOpts = {
   projectLocalDomain: 'http://alpha' + externalPathToGulpfile,
-  devBrowser: 'firefox',
   // Should browsers be reloaded when files with these extensions get changed?
   reloadOn: {
     html: true,
@@ -208,8 +207,8 @@ var watcherAnnounce = function watcherAnnounce(event) {
 
 gulp.task('serve', ['compile-css', 'compile-custom-js'], function() {
   browsersync.init({
-    proxy: buildOpts.projectLocalDomain,
-    browser: buildOpts.devBrowser
+    proxy: buildOpts.projectLocalDomain
+    // browser: Firefox
   });
 
   // See https://www.browsersync.io/docs/gulp/#gulp-reload
