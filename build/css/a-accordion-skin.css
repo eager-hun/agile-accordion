@@ -62,7 +62,7 @@
   margin-top: -10px;
   position: absolute;
   top: 50%;
-  transition: 100ms background ease-in-out, 400ms transform ease-in-out;
+  transition: 100ms background ease-in-out, 700ms transform ease-in-out;
   width: 20px;
 }
 
