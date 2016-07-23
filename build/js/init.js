@@ -16,20 +16,21 @@
   console.log('Init.');
 
 
-  // ###########################################################################
+  // ##########################################################################
   // Init accordions.
 
   $('.accdn')
-    .not('#accdn--3')
-    .accdn({
-      tabsAt: 740,
-      exclusiveItems: false
-    });
+    .not('#accdn--3, #accdn--4')
+    .accdn();
 
   $('#accdn--3')
     .accdn({
-      tabsAt: 100
+      tabsAt: 0
+    });
+
+  $('#accdn--4')
+    .accdn({
+      tabsAt: 100000
     });
 
 })(jQuery, this, this.document);
-
